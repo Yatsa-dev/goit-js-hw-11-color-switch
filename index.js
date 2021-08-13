@@ -12,9 +12,9 @@ const refs = {
     startBtn: document.querySelector('button[data-action="start"]'),
     stopBtn: document.querySelector('button[data-action="stop"]'),
     bodyBackgroundColor: document.querySelector('body')
-}
+};
 
-refs.startBtn.addEventListener('click', onChangeColorBody)
+refs.startBtn.addEventListener('click', onChangeColorBody);
 
 const randomIntegerFromInterval = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -31,7 +31,7 @@ function onChangeColorBody() {
         clearInterval(intervalID);
         refs.startBtn.removeAttribute('disabled')
     })
-}
+};
 
 
 function getRandomColorBody() {
